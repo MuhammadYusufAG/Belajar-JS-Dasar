@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name;
+        //kalo ga diisi string/data akan undefined
+        //kalo dikasi string/data bakal defined
+        if (name === undefined){
+            console.info('undefined')
+        }
+        else {
+            console.info('defined')
+        }
+
+        const names = ['muhammad, yusuf'];
+        //kalo dikasi data ke 1/0 bakal define atau ditmabah data di array
+        if (names[2] === undefined){
+            console.info('array undefined')
+        }else{
+            console.info('array defined')
+        }
+
+        const person = {};
+        if (person.name === undefined){
+                console.info('object undefined')
+        }else{
+            console.info('object defined')
+        }
+
+    </script>
+</body>
+</html>

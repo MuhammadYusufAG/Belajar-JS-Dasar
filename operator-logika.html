@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // &&  = dan --> klo ada false pasti false
+        // ||  = or atau --> klo ada true maka true
+        // !   = unary / kebalikan -->jika true maka false  
+        const nilaiUjian = 86;
+        const nilaiAbsen = 80;
+
+        const lulusUjian = nilaiUjian > 75;
+        document.writeln(lulusUjian);
+
+        const lulusAbses = nilaiAbsen > 75;
+        document.writeln(lulusAbses);
+
+        const lulus = lulusUjian && lulusAbses;
+        document.writeln(lulus)
+
+
+
+
+
+    </script>
+</body>
+</html>

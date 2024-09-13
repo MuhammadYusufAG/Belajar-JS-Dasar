@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello (firstName , lastName){
+            const say = `Hello, ${firstName} ${lastName}`;
+            return say;
+        }
+
+        //sayHello ditangkap result
+        const result = sayHello('muhammad', 'yusuf');
+        document.writeln(`<p>${result}</p>`)
+
+        //function digunakan lebih dari satu value
+        function getFinalValue (value){
+            if(value > 90){
+                return 'A';
+            }
+            else if(value > 80){
+                return 'B';
+            }
+            else if(value > 75){
+                return 'C';
+            }
+            else if(value > 60){
+                return 'D';
+            }
+            else{
+                return 'E';
+            }
+        }
+
+        const finalValue = getFinalValue(91);
+        document.writeln(`<p>${finalValue}</p>`);
+
+        //menghentikan value
+        function isContiner (array , searchValue){
+            for (const element of array) {
+                console.info(`literasi element${element}`)
+                if(element === searchValue){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [12,1,4,574,632,487,43,21,45,6];
+        const search = 234;
+        const found = isContiner(array, search);
+        document.writeln(`<p> ${found}</p>`);
+    </script>
+</body>
+</html>

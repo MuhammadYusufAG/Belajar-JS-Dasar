@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //global scope
+        // let i = 20;
+
+        // for(let i = 0; i > 10; i++){
+        //     //local scope
+        //     console.log(`Lokal ${i}`);
+        // }
+
+        // console.info(`global ${i}`)
+
+        //global scope
+        //make var tidak bisa ditebak
+        var i = 20;
+
+        for(var i = 0; i > 10; i++){
+            //local scope
+            console.log(`Lokal ${i}`);
+        }
+
+        console.info(`global ${i}`)
+    </script>
+</body>
+</html>

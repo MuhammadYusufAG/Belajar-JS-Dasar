@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logika non boolean</title>
+</head>
+<body>
+    <script>
+        // || ini or
+        //truthy falsy = truthy
+        console.info('hallo'||'');
+        //falsy truthy = truthy
+        console.info(''||[]);
+        //truthy truthy = truthy yang awal
+        console.info('0'||'NOL');
+        //falsy truthy = truthy
+        console.info(0 || 'NOL');
+        //falsy truthy = truthy
+        console.info(null||'NULL');
+        //falsy truthy = truthy
+        console.info(undefined||'UNDEFINED');
+        //falsy falsy = falsy ngambil yang terakhir
+        console.info(0 || false);
+
+        const person = {
+            firstName : 'muhammad',
+            lastName : 'ysuf'
+        }
+
+        //kalo firstname kosong  yang kesiisi bakal lastname
+        const name = person.firstName || person.lastName;
+        console.info(name);
+
+
+        // && ini dan
+        //memunculkan yang falsy,kalo falsy dua duanya akan dipilih yang paling akhir
+        console.info('hallo'&&'');//''
+        console.info('hallo'&&'NOL');//'NOL'
+        console.info(0 && false);//0
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nama = 'Muhammad Yusuf Abdul Ghany';
+        const firsName = 'Muhammad'
+        const middleName = 'Yusuf'
+        const lastName ='Abdul Ghany'
+        
+        const tamplate = `Nama = ${firsName} ${middleName} ` ;
+        console.info(tamplate)
+
+        // perbandingan
+
+        const nilai = 85
+        const tamplate2 = ` Nama = ${nama}, lulus = ${nilai > 70}`;
+        console.info(tamplate2)
+
+
+        // mulriline menggunaka backtic `````
+        //jangan sampe ada space
+
+        const multiline = `nama saya Muhammda Yusuf
+Abdul Ghany
+Saya tinggal di Jakarta
+Saya umur 18 thn`;
+
+        document.writeln ('<pre>')
+        document.writeln(multiline)
+        document.writeln ('</pre>')
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //================= global scope ==============
+        let counter = 0;
+
+        //global scope
+        function hitMe(){
+            //local scope hitMe
+            counter ++;
+        }
+
+        //global scope
+        function other(){
+            //local scope other
+        }
+        hitMe();
+        hitMe();
+        console.info(counter);
+
+        
+
+
+        //================= Lokal Scope =================
+        //lokal scope tidak bisa saling mengakses
+
+        function first (){
+            //lokal scope first
+            let fisrtVariable ='first';//global scope dari firstNested
+
+            function firstNested(){
+                //lokal scope fistNested
+                console.info(fisrtVariable);
+                //ini tdak bisa akses diluar firstNested
+                const firstNestedVariable = 'first nested';
+            }
+            //bisa diakses karena global scope dari firstVariable
+            firstNested();
+            //gabisa diakses karena lokal scope dari firstNested
+            //console.info(firstNestedVariable);//error
+
+
+        }
+
+        function second (){
+            //local scope
+            let secondVariable = 'second'
+
+            //tidak bisa mengakses sesama lokal scope
+            // console.info(first);//error
+        }
+
+        first();
+        second();
+
+        //global scope
+        //tidak bisa mengakses lokal scope di global
+
+        // console.info(fisrtVariable);//error
+        // console.info(secondVariable);//error
+
+
+
+    </script>
+</body>
+</html>

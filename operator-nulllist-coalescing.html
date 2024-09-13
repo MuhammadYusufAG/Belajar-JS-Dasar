@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //kalo ga di isi akan jadi nilai default
+        let parameter = 'yusfu'
+        // tanpa nullist coulescing
+        let data = parameter;
+        if(data == undefined || data == null){
+            data = 'nilai default';
+        }
+        document.writeln(`<p>${data}</p>`);
+
+        //menggunakan nullist
+        //let data
+        data = parameter ?? 'nilai default';
+
+        document.writeln(`<p>${data}</p>`);
+
+
+    </script>
+</body>
+</html>
